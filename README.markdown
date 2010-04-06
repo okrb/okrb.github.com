@@ -1,4 +1,4 @@
-= The OK.rb Web Site
+# The OK.rb Web Site
 
 This is the public Web site for the Oklahoma Ruby Users Group.
 
