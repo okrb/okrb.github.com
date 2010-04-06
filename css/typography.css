@@ -1,0 +1,82 @@
+body {
+    font-size:   62.5%;
+    font-family: Verdana, sans-serif;
+}
+#page {
+    color: #333333;
+}
+
+h1, h2, h3 {
+    margin:  0px;
+    padding: 10px 0px;
+    width:   100%;
+    
+    font-family: Georgia, serif;
+    text-align:  center;
+    color:       #EEEEEE;
+}
+h1 {
+    font-size: 2.4em;
+}
+h2 {
+    font-size: 2.0em;
+}
+h3 {
+    font-size: 1.8em;
+}
+
+a, a:hover, a:visited {
+    color: #CC3810;
+}
+a:visited {
+    color: #7F1015;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+#group .description {
+    font-size:   1.4em;
+    line-height: 150%;
+}
+
+#events .event .date, #events .event .paginator {
+    font-size:   1.4em;
+    line-height: 150%;
+}
+#events .event .paginator {
+	width: 100%;
+	text-align: right;
+}
+#events .event .content {
+    font-size:        1.2em;
+    line-height:      150%;
+    list-style-image: url('../images/ruby_bullet.png');
+}
+
+#members .member .name {
+    font-weight: bold;
+    font-size:   1.4em;
+    line-height: 150%;
+}
+#members .member .role {
+    font-size:   1.4em;
+    line-height: 150%;
+}
+#events .event .description, #members .member .description {
+    text-align:  justify;
+    font-size:   1.2em;
+    line-height: 150%;
+}
+
+#presentations .content, #contacts .resources {
+    font-size:   1.2em;
+    line-height: 150%;
+    list-style-image: url('../images/ruby_bullet.png');
+}
+#contacts .resources a {
+    display: block;
+}

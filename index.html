@@ -1,0 +1,103 @@
+---
+
+---
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                      "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>OK.rb</title>
+        <link rel="stylesheet" href="/css/layout.css"     type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="/css/typography.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="/css/design.css"     type="text/css" media="screen" charset="utf-8">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/scripts/jquery.shuffle.js"></script>
+        <script type="text/javascript" src="/scripts/rotations.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="page">
+            <div id="group">
+                <h1>OK.rb:  Ruby in the Heartland</h1>
+                <div class="description">
+                    We are a group of Ruby programmers in the Oklahoma City area.  We
+                    welcome technologists of all levels.  Programmers to the east of us may
+                    wish to checkout our sister group
+                    <a href="http://tulsarb.org/wiki/Main_Page">Tulsa.rb</a>.
+                </div>
+            </div>
+
+            <div id="events">
+                <h2>Events</h2>
+                <div class="event">
+                    <div class="description">
+                        We meet on the second Thursday of the month at the
+                        <a href="http://okccoco.com/">okcCoCo</a>
+                        (<a href="http://okccoco.com/?page_id=109">map</a>) at
+                        6:30 PM. We are friendly, so drop by and see what we are
+                        up to.
+                    </div>
+                        
+                    <span class="date">
+                        Next Meeting:
+                        <strong>{{ site.categories.events.first.date | date: "%B %d, %Y" }}</strong>
+                    </span>
+                    
+                    <div class="details">
+                        {{ site.categories.events.first.content }}
+                    </div>
+                </div>
+            </div>
+
+            <div id="members">
+                <h2>Members</h2>
+                <div class="full_list">
+                    {% for member in site.categories.members %}
+                        <a href="{{ member.url }}">{{ member.title }}</a>
+                    {% endfor %}
+                </div>
+                <div class="member">
+                    {{ site.categories.members.last.content }}
+                </div>
+            </div>
+
+            <div id="presentations">
+                <h3>Presentations</h3>
+                <div class="partial_list">
+                    {% for event in site.categories.events %}
+                        {{ event.content }}
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div id="extra">
+                <h3>&nbsp;</h3>
+            </div>
+
+            <div id="contacts">
+                <h3>Contact Us</h3>
+                <ul class="resources">
+                    <li>
+                        <a href="http://groups.google.com/group/okrb">Mailing List</a>
+                        <span class="description">
+                            The best way to keep up with our meeting plans.
+                        </span>
+                    </li>
+                    <li>
+                        <a href="irc://irc.freenode.net/#okrb">IRC Channel</a>
+                        <span class="description">
+                            The best place to find us most of the time.
+                        </span>
+                    </li>
+                    <li>
+                        <a href="mailto:james@grayproductions.net">Email a Cofounder</a>
+                        <span class="description">
+                            You are welcome to ask James questions about the group if you
+                            can't find help in the above sources.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

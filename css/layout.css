@@ -1,0 +1,85 @@
+body {
+    margin:  0px;
+    padding: 0px;
+    
+    text-align: center;  /* center #page div */
+}
+#page {
+	width:   760px;
+	margin:  0px auto;
+	padding: 0px;
+	
+    text-align: left;  /* restore normal alignment */
+}
+
+#group {
+    min-height: 137px;
+}
+#group .description {
+    padding: 5px 30px 35px 30px;
+}
+
+#events, #members {
+    width:      370px;
+    min-height: 292px;
+    margin:     20px 0px 0px 0px;
+    padding:    0px;
+    float:      left;
+}
+#events {
+    margin-right: 20px;
+}
+#events, #members {
+    text-align: center;  /* center .member div */
+}
+#events .event, #members .member {
+    width:   310px;
+	margin:  0px auto;
+	padding: 5px 0px 35px 0px;
+
+    text-align: left;  /* restore normal alignment */
+}
+#members .member img {
+    float:        left;
+    margin-right: 10px;
+}
+#events .event span, #members .member span {
+    display: block;
+}
+#events .event .content {
+	padding-left: 30px;
+}
+#events .event .paginator, #presentations .paginator {
+	display: none;
+}
+
+#presentations {
+    clear: both;
+}
+#presentations .partial_list {
+	padding-top: 1em;
+}
+#presentations .content {
+	margin-top:    0px;
+	margin-bottom: 0px;
+}
+#presentations .content .title {
+	display: block;
+}
+#presentations, #extra, #contacts {
+    width:      240px;
+    min-height: 369px;
+    margin:     20px 0px 0px 0px;
+    padding:    0px;
+    float:      left;
+}
+#presentations, #extra {
+    margin-right: 20px;
+}
+#presentations .content, #contacts .resources {
+    padding: 0px 30px 0px 55px;
+}
+
+.full_list {
+	display: none;
+}
