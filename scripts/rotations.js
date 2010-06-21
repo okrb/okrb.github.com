@@ -43,5 +43,5 @@ jQuery(function() {
             }
         });
 		$(member).appendTo('#members .full_list');
-	}, 5000);
+	}, 8000);
 });
