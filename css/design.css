@@ -3,25 +3,26 @@ body {
 }
 
 #group {
-    background: #EBD0A4 url('../images/top_fringe.png') bottom center no-repeat;
+    background-color: #EBD0A4;
 }
 h1 {
     background: url('../images/large_header.png') repeat-x;
 }
 
 #events {
-    background: #EBD0A4 url('../images/oklahoma_with_fringe.png') bottom center no-repeat;
+    background-color: #EBD0A4;
 }
 #members {
-    background: #EBD0A4 url('../images/ruby_with_fringe.png') bottom center no-repeat;
+    background-color: #EBD0A4;
 }
 h2 {
     background: url('../images/medium_header.png') repeat-x;
 }
 
 #presentations, #extra, #contacts {
-    background: #EBD0A4 url('../images/bottom_fringe.png') bottom center no-repeat;
+    background-color : #EBD0A4;
 }
+
 h3 {
     background: url('../images/small_header.png') repeat-x;
 }

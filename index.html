@@ -63,15 +63,17 @@
 
             <div id="presentations">
                 <h3>Presentations</h3>
+                <div id="videos">
+                  <embed src="http://blip.tv/play/he91jPo3lvJn" type="application/x-shockwave-flash" width="480" height="270" allowscriptaccess="always" allowfullscreen="true"></embed>
+                </div>
                 <div class="partial_list">
                     {% for event in site.categories.events %}
                         {{ event.content }}
                     {% endfor %}
                 </div>
-            </div>
+                <div style="clear:both;">
+                </div>
 
-            <div id="extra">
-                <h3>&nbsp;</h3>
             </div>
 
             <div id="contacts">

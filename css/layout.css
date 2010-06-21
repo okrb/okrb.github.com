@@ -22,7 +22,7 @@ body {
 #events, #members {
     width:      370px;
     min-height: 292px;
-    margin:     20px 0px 0px 0px;
+    margin:     20px 0px 20px 0px;
     padding:    0px;
     float:      left;
 }
@@ -33,11 +33,10 @@ body {
     text-align: center;  /* center .member div */
 }
 #events .event, #members .member {
-    width:   310px;
+  width:   310px;
 	margin:  0px auto;
 	padding: 5px 0px 35px 0px;
-
-    text-align: left;  /* restore normal alignment */
+  text-align: left;  /* restore normal alignment */
 }
 #members .member img {
     float:        left;
@@ -53,33 +52,34 @@ body {
 	display: none;
 }
 
-#presentations {
-    clear: both;
-}
 #presentations .partial_list {
 	padding-top: 1em;
 }
+
 #presentations .content {
-	margin-top:    0px;
-	margin-bottom: 0px;
+  margin: 0;
 }
+
 #presentations .content .title {
 	display: block;
 }
-#presentations, #extra, #contacts {
-    width:      240px;
-    min-height: 369px;
-    margin:     20px 0px 0px 0px;
-    padding:    0px;
-    float:      left;
+
+#presentations, #contacts {
+    clear: both;
+    width:      760px;
+    margin:     20px 0px 20px 0px;
+    padding:    0px 0px 20px 0px;
 }
-#presentations, #extra {
-    margin-right: 20px;
-}
+
 #presentations .content, #contacts .resources {
     padding: 0px 30px 0px 55px;
 }
 
 .full_list {
 	display: none;
+}
+
+#videos {
+  float:right;
+  padding: 20px 20px 0px 20px;	
 }
