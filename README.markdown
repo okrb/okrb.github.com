@@ -9,4 +9,3 @@ Members should feel free to add to this site.  For example, you can add your mem
 Then just follow the instructions.
 
 Also see [the TODO file](http://github.com/okrb/okrb.github.com/blob/master/TODO) for other tasks we could use help with.
-
