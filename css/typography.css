@@ -43,12 +43,12 @@ a:hover {
     line-height: 150%;
 }
 
-#events .event .date, #events .event .paginator {
+#events .event .date, #events .event .paginator, #presentations .extender {
     font-size:   1.4em;
     line-height: 150%;
 }
 #events .event .paginator {
-	width: 100%;
+	width:      100%;
 	text-align: right;
 }
 #events .event .content {
@@ -70,6 +70,10 @@ a:hover {
     text-align:  justify;
     font-size:   1.2em;
     line-height: 150%;
+}
+
+#presentations .extender {
+	margin-left: 55px;
 }
 
 #presentations .content, #contacts .resources {

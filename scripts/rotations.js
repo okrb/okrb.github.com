@@ -44,4 +44,11 @@ jQuery(function() {
         });
 		$(member).appendTo('#members .full_list');
 	}, 8000);
+
+	// extend presentation listing
+	$('#presentations .extender a').live('click', function(event) {
+		event.preventDefault();
+		$('#more_presentations').show();
+		$(this).parent().hide();
+	});
 });

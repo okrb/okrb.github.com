@@ -19,11 +19,14 @@ body {
     padding: 5px 30px 35px 30px;
 }
 
+#events_and_members {
+	overflow: hidden;
+}
 #events, #members {
     width:      370px;
     min-height: 292px;
-    margin:     20px 0px 20px 0px;
-    padding:    0px;
+    margin:     20px 0px -280px 0px;
+    padding:    0px 0px 300px 0px;
     float:      left;
 }
 #events {
@@ -33,9 +36,9 @@ body {
     text-align: center;  /* center .member div */
 }
 #events .event, #members .member {
-  width:   310px;
-	margin:  0px auto;
-	padding: 5px 0px 35px 0px;
+  width:      310px;
+  margin:     0px auto;
+  padding:    5px 0px 35px 0px;
   text-align: left;  /* restore normal alignment */
 }
 #members .member img {
@@ -65,10 +68,10 @@ body {
 }
 
 #presentations, #contacts {
-    clear: both;
-    width:      760px;
-    margin:     20px 0px 20px 0px;
-    padding:    0px 0px 20px 0px;
+    clear:   both;
+    width:   760px;
+    margin:  20px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 #presentations .content, #contacts .resources {
@@ -80,6 +83,6 @@ body {
 }
 
 #videos {
-  float:right;
+  float:   right;
   padding: 20px 20px 0px 20px;	
 }

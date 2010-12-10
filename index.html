@@ -27,37 +27,39 @@
                 </div>
             </div>
 
-            <div id="events">
-                <h2>Events</h2>
-                <div class="event">
-                    <div class="description">
-                        We meet on the second Thursday of the month at the
-                        <a href="http://okccoco.com/">okcCoCo</a>
-                        (<a href="http://okccoco.com/?page_id=109">map</a>) at
-                        6:30 PM. We are friendly, so drop by and see what we are
-                        up to.
-                    </div>
-                        
-                    <span class="date">
-                        Next Meeting:
-                        <strong>{{ site.categories.events.first.date | date: "%B %d, %Y" }}</strong>
-                    </span>
-                    
-                    <div class="details">
-                        {{ site.categories.events.first.content }}
-                    </div>
-                </div>
-            </div>
+            <div id="events_and_members">
+                <div id="events">
+                    <h2>Events</h2>
+                    <div class="event">
+                        <div class="description">
+                            We meet on the second Thursday of the month at the
+                            <a href="http://okccoco.com/">okcCoCo</a>
+                            (<a href="http://okccoco.com/?page_id=109">map</a>) at
+                            6:30 PM. We are friendly, so drop by and see what we are
+                            up to.
+                        </div>
 
-            <div id="members">
-                <h2>Members</h2>
-                <div class="full_list">
-                    {% for member in site.categories.members %}
-                        <a href="{{ member.url }}">{{ member.title }}</a>
-                    {% endfor %}
+                        <span class="date">
+                            Next Meeting:
+                            <strong>{{ site.categories.events.first.date | date: "%B %d, %Y" }}</strong>
+                        </span>
+
+                        <div class="details">
+                            {{ site.categories.events.first.content }}
+                        </div>
+                    </div>
                 </div>
-                <div class="member">
-                    {{ site.categories.members.last.content }}
+
+                <div id="members">
+                    <h2>Members</h2>
+                    <div class="full_list">
+                        {% for member in site.categories.members %}
+                            <a href="{{ member.url }}">{{ member.title }}</a>
+                        {% endfor %}
+                    </div>
+                    <div class="member">
+                        {{ site.categories.members.last.content }}
+                    </div>
                 </div>
             </div>
 
@@ -67,13 +69,20 @@
                   <embed src="http://blip.tv/play/he91jPo3lvJn" type="application/x-shockwave-flash" width="480" height="270" allowscriptaccess="always" allowfullscreen="true"></embed>
                 </div>
                 <div class="partial_list">
-                    {% for event in site.categories.events %}
+                    {% for event in site.categories.events limit:3 %}
                         {{ event.content }}
                     {% endfor %}
+                    <div id="more_presentations" style="display: none;">
+                        {% for event in site.categories.events offset:3 %}
+                            {{ event.content }}
+                        {% endfor %}
+                    </div>
+                    <div class="extender">
+                        <a href="#">Show more presentations</a>
+                    </div>
                 </div>
                 <div style="clear:both;">
                 </div>
-
             </div>
 
             <div id="contacts">
