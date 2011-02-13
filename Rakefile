@@ -10,7 +10,7 @@ task :add_event do
                             find { |d| d.wday == 4 }
            unless thurs2 >= now
              thurs2 = (8..14).map  { |d| Time.local( now.mon == 12 ?
-                                                       now.year + 1 : 1,
+                                                       now.year + 1 : now.year,
                                                      now.mon == 12 ?
                                                        1 : now.mon + 1,
                                                      d ) }.
