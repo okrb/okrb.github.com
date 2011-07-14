@@ -27,23 +27,28 @@ jQuery(function() {
 	});
 	$('#events .event .paginator').fadeIn();
 	
-	// rotate member profiles every five seconds
-	$('#members .full_list').shuffle();
-	setInterval(function() {
-		var member = $('#members .full_list a:first').detach();
-		$.ajax({
-		    url:      member.attr('href'),
-		    type:     "GET",
-		    dataType: "html",
-            success: function(data, textStatus, xhr) {
-		        $('#members .member').fadeOut(function() {
-			        $('#members .member').html(data);
-			        $('#members .member').fadeIn();
-				});
-            }
-        });
-		$(member).appendTo('#members .full_list');
-	}, 8000);
+	if(location.hash != '') {
+		$.get($('a[text='+location.hash.replace(/^#/, '').replace('_', ' ')+']').attr('href'),
+			function(data) { $('#members .member').html(data) });
+	} else {
+		// rotate member profiles every five seconds
+		$('#members .full_list').shuffle();
+		setInterval(function() {
+			var member = $('#members .full_list a:first').detach();
+			$.ajax({
+			    url:      member.attr('href'),
+			    type:     "GET",
+			    dataType: "html",
+	            success: function(data, textStatus, xhr) {
+			        $('#members .member').fadeOut(function() {
+				        $('#members .member').html(data);
+				        $('#members .member').fadeIn();
+					});
+	            }
+	        });
+			$(member).appendTo('#members .full_list');
+		}, 8000);
+	}
 
 	// extend presentation listing
 	$('#presentations .extender a').live('click', function(event) {
